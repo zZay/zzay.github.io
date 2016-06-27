@@ -1,1 +1,41 @@
-﻿中文汉字
+﻿<!doctype html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>个人主页</title>
+	<link rel="stylesheet" href="hw01.css">
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+		<img src="headim.jpg" id="headimage">
+		<div id="intro">
+			<h2>汉字</h2>
+			<p>汉字</p>
+			<p>intro</p>
+		</div>
+    </div>
+    
+    <div class="block" id="block01">
+		<div class="title">title</div>
+		<div class="item">item01</div>
+		<div class="item">汉字</div>
+	</div>
+    <div class="block" id="block02">
+		<div class="title">title</div>
+		<div class="journal">
+			<h3><a href="http://www.bilibili.com/" target="_blank">journal01</a></h3>
+			<p>journal01</p>
+		</div>
+		<div class="journal">
+			<h3><a href="http://www.bilibili.com/" target="_blank">journal02</a></h3>
+			<p>journal02</p>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+<div id="footer">footer</div>
+</body>
+</html>
