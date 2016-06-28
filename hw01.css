@@ -1,5 +1,6 @@
 body{
 	background:#eeeeee;
+	font-family: "Microsoft YaHei";
 }
 #container{
     width:1200px;
@@ -14,7 +15,7 @@ body{
 	border-width:0px;
 	border-radius:5px;
 }
-#headimage{
+#head_image{
 	float:left;
 	margin:20px;
 	width:120px;
@@ -24,14 +25,27 @@ body{
 	border-color:#ffffff;
 	border-radius:10px;
 }
-#intro{
+#head_intro{
 	float:left;
 	margin-left:5px;
 	padding-top:20px;
 }
-#name{
+#head_name{
 	font-weight:bold;
 	font-size:30px;
+}
+
+.menu{
+	height:60px;
+	margin-top:30px;
+	background:#99bbbb;
+	border-style:solid;
+	border-width:0px;
+	border-radius:5px;
+}
+.menu_item{
+	float:left;
+	padding:20px;
 }
 
 .block{
@@ -44,40 +58,65 @@ body{
 	border-radius:3px;
     background:#ffffff;
 }
-.title{
+.block_title{
 	padding:10px 15px;
 	background:#B0C4DE;
 	font-size:18px;
 	font-weight:bold;
 	color:#ffffff;
 }
-.item{
+
+#homework_block{
+    height:400px;
+    width:200px;
+    float:left;
+}
+.homework_item{
 	padding:10px 15px;
 	border-bottom-style:solid;
 	border-width:1px;
 	border-color:#cccccc;
 }
-#block01{
-    height:400px;
-    width:200px;
-    float:left;
-}
-#block02{
+
+#journal_block{
     height:400px;
     width:980px;
     float:right;
 }
-.journal{
+.journal_item{
 	border-bottom-style:solid;
 	border-width:1px;
 	border-color:#cccccc;
 	padding-bottom:5px;
 }
-.journal h3{
+.journal_item h3{
 	padding-left:20px;
 }
-.journal p{
+.journal_item p{
 	padding-left:50px;
+}
+
+.page{
+	#height:1000px;
+	width:1200px;
+	margin-top:20px;
+	padding-bottom:50px;
+    background:#ffffff;
+	border-style:solid;
+	border-width:1px;
+	border-color:#A9A9A9;
+	border-radius:3px;
+    background:#ffffff;
+}
+.page_title{
+	padding:10px 15px;
+	background:#B0C4DE;
+	font-size:18px;
+	font-weight:bold;
+	color:#ffffff;
+}
+.page_article{
+	padding:20px 40px;
 }
 
 a:link {color:#000000; text-decoration:none;}
