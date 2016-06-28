@@ -53,7 +53,7 @@ body{
 .menu_item a:hover {color:#aaaaaa; text-decoration:underline;}
 
 .block{
-	height:600px;
+	height:500px;
 	margin-top:20px;
     background:#ffffff;
 	border-style:solid;
@@ -74,7 +74,6 @@ body{
 .block a:hover {color:#666666; text-decoration:underline;}
 
 #homework_block{
-    height:400px;
     width:200px;
     float:left;
 }
@@ -86,7 +85,6 @@ body{
 }
 
 #journal_block{
-    height:400px;
     width:980px;
     float:right;
 }
@@ -130,10 +128,12 @@ body{
 }
 
 #footer{
-    height:40px;
-    background:#99bbbb;
-    margin-top:20px;
+    #height:30px;
+    #background:#99bbbb;
+	color:#99bbbb;
+    margin:20px auto;
 	padding:10px;
+	text-align:center;
 }
 .clear{
     clear:both;
