@@ -28,8 +28,7 @@ body{
 }
 #head_intro{
 	float:left;
-	margin-left:5px;
-	padding-top:20px;
+	margin:20px 5px 0;
 }
 #head_name{
 	font-weight:bold;
@@ -63,15 +62,23 @@ body{
     background:#ffffff;
 }
 .block_title{
+	height:28px;
 	padding:10px 15px;
 	background:#B0C4DE;
 	font-size:18px;
 	font-weight:bold;
 	color:#ffffff;
 }
+.block_count{
+	margin-left:8px;
+	padding:0px 3px;
+	border-style:solid;
+	border-width:2px;
+	border-radius:5px;
+	border-color:#dddddd;
+	font-size:16px;
+}
 .block_foot{
-	#position:absolute;
-	#bottom:0px;
     margin:20px auto;
 	color:#99bbbb;
 	text-align:center;
@@ -99,7 +106,7 @@ body{
 	border-bottom-style:solid;
 	border-width:1px;
 	border-color:#cccccc;
-	padding-bottom:5px;
+	padding-bottom:20px;
 }
 .journal_item h3{
 	padding-left:20px;
@@ -109,7 +116,6 @@ body{
 }
 
 .page{
-	#height:1000px;
 	width:1200px;
 	margin-top:20px;
 	padding-bottom:50px;
@@ -135,11 +141,8 @@ body{
 }
 
 #footer{
-    #height:30px;
-    #background:#99bbbb;
 	color:#99bbbb;
-    margin:20px auto;
-	padding:10px;
+    margin:30px auto;
 	text-align:center;
 }
 .clear{
