@@ -69,6 +69,13 @@ body{
 	font-weight:bold;
 	color:#ffffff;
 }
+.block_foot{
+	#position:absolute;
+	#bottom:0px;
+    margin:20px auto;
+	color:#99bbbb;
+	text-align:center;
+}
 .block a:link {color:#000000; text-decoration:none;}
 .block a:visited {color:#000000; text-decoration:none;}
 .block a:hover {color:#666666; text-decoration:underline;}
@@ -78,7 +85,7 @@ body{
     float:left;
 }
 .homework_item{
-	padding:10px 15px;
+	padding:15px 20px;
 	border-bottom-style:solid;
 	border-width:1px;
 	border-color:#cccccc;
