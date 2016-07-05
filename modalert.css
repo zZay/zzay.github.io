@@ -1,0 +1,13 @@
+#modalert{
+	position:fixed;
+	width:150px;
+	height:100px;
+	top:300px;
+	left:550px;
+	text-align:center;
+	background-color:#eeeeee;
+	border-style:solid;
+	border-width:3px;
+	border-color:#99bbbb;
+	border-radius:5px;
+}
