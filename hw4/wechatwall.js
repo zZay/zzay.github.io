@@ -19,7 +19,7 @@ function gethistory()
 	{
 		if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
 		{
-			eval("var response = " + xmlhttp.responseText);
+			var response = JSON.parse(xmlhttp.responseText);
 			for(var i = response.length - 1; i >= 0; i--)
 			{
 				newmsg(response[i]);
