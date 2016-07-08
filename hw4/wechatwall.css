@@ -4,7 +4,6 @@ body{
 #container{
 	margin:0px auto;
 	font-family:"Microsoft YaHei";
-	#-webkit-transform: scale(0.8);
 }
 #notice{
 	height:70px;
@@ -31,12 +30,12 @@ body{
 }
 .move{
 	position:relative;
-	-webkit-animation: godown 0.5s;
-	-webkit-animation-play-state: paused;
+	-webkit-animation:godown 0.5s;
+	-webkit-animation-play-state:paused;
 }
 @-webkit-keyframes godown{
-	from {top: 0px;}
-	to {top: -160px;}
+	from{top:0px;}
+	to{top:-160px;}
 }	
 .massage{
 	height:120px;
@@ -72,7 +71,6 @@ body{
 	top:-90px;
 	margin-right:130px;
 	font-size:50px;
-	word-wrap: break-word;
 }
 #footer{
 	margin:10px 0;
@@ -82,5 +80,4 @@ body{
 	font-size:20px;
 	background-color:#222222;
 	color:#bbbbbb;
-	
 }

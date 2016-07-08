@@ -38,21 +38,13 @@ var cmd = new Object();
 cmd.admin = 0;
 cmd.started = 0;
 
-/*function init()
-{
-	var h = document.body.clientHeight;
-	var c = document.getElementById("container");
-	var rate = $(window).height() / 640;
-	c.style.webkitTransform = "scale(1, " + rate + ")";
-};*/
-
 function newmsg(obj)
 {
 	if(cmd.started == 1)
 	{
 		var m = document.getElementsByClassName("move")[0];
 		m.addEventListener("webkitAnimationEnd", stop, false);
-		m.style.WebkitAnimationPlayState = "running";
+		m.style.webkitAnimationPlayState = "running";
 	}
 	
 	if(obj.content.length * 50 > document.body.clientWidth - 200)
@@ -73,9 +65,9 @@ function newmsg(obj)
 var stop = function()
 {
 	var m = document.getElementsByClassName("move")[0];
-	m.style.WebkitAnimationPlayState = "paused";
+	m.style.webkitAnimationPlayState = "paused";
 	m.classList.remove("move");
-	m.offsetWidth = m.offsetWidth;
+	m.offsetHeight = m.offsetHeight;
 	m.classList.add("move");
 	m.removeEventListener("webkitAnimationEnd", stop);
 	
@@ -95,8 +87,8 @@ function newadmin(obj)
 	}
 	var adm = document.getElementById("admin");
 	adm.innerHTML = 
-		'<div class="nickname">' + 'admin' + '</div>' +
-		'<img class="adminimg" src="' + 'admin.png' + '">' +
+		'<div class="nickname">admin</div>' +
+		'<img class="adminimg" src="admin.png">' +
 		'<div class="content">' + obj.content + '</div>';
 	adm.style.display = "block";
 	
