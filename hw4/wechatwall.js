@@ -1,17 +1,14 @@
-var socket = io.connect('https://wall.cgcgbcbc.com');
-socket.on('connect', function()
+var socket = io.connect("https://wall.cgcgbcbc.com");
+socket.on("connect", function()
 {
-	console.log('connect');
 	gethistory();
 });
-socket.on('new message', function(data)
+socket.on("new message", function(data)
 {
-	console.log('new message');
 	newmsg(data);
 });
-socket.on('admin', function(data)
+socket.on("admin", function(data)
 {
-	console.log('admin');
 	newadmin(data);
 });
 
