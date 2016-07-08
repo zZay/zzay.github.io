@@ -34,11 +34,19 @@ function gethistory()
 var cmd = new Object();
 cmd.admin = 0;
 cmd.started = 0;
+cmd.moving = 0;
+cmd.queue = new Array();
 
 function newmsg(obj)
 {
 	if(cmd.started == 1)
 	{
+		if(cmd.moving == 1)
+		{
+			cmd.queue.unshift(obj);
+			return;
+		}
+		cmd.moving = 1;
 		var m = document.getElementsByClassName("move")[0];
 		m.addEventListener("webkitAnimationEnd", stop, false);
 		m.style.webkitAnimationPlayState = "running";
@@ -73,6 +81,12 @@ var stop = function()
 	if(cmd.admin == 1)
 	{
 		mags[0].style.display = "none";
+	}
+	
+	cmd.moving = 0;
+	if(cmd.queue.length != 0)
+	{
+		newmsg(cmd.queue.pop());
 	}
 }
 
